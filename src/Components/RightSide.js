@@ -30,11 +30,19 @@ class RightSide extends React.Component {
             console.log(this.state)
     } 
 
+    testHandler = () => {
+        let textArray = ["yes", "no", "maybe so"]
+        let randomIndex = Math.floor(Math.random() * textArray.length); 
+        let randomElement = textArray[randomIndex];
+        console.log(randomElement)
+    }
+
     render = () => {
         return (
         <div className="right-side">
             <h3>The Score</h3>
             <button onClick={this.clickHandler}>Pitch</button>
+            <button onClick={this.testHandler}>Tryout</button>
         </div>
         )
     }
