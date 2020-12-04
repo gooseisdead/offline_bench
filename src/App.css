@@ -1,38 +1,126 @@
-.App {
+.parent {
+  display: grid;
+}
+  
+.main-header {
+  grid-area: 1 / 1 / 2 / 5;
+  border-color: black;
+  border-width:3px;  
+  border-style: dotted;
+  border-radius: 10px;
   text-align: center;
+  max-height: 33%;
+  margin-left: 4%;
+  background-color: rgb(120, 196, 44);
+  font-family: sans-serif;
+  font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.baseball-img {
+  margin-top: 3%;
+  max-width: 70%;
+  max-height: 77%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.upper-right {
+  grid-area: 1 / 5 / 2 / 6;
+  border-color: black;
+  border-width:3px;  
+  border-style: dotted;
+  border-radius: 10px;
+  text-align: center;
+  max-height: 33%;
+  margin-left: 4%;
+  margin-right: 6%;
+  margin-top: 18%;
+  background-color: rgb(120, 196, 44);
+  font-family: sans-serif;
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-container {
+  grid-area: 2 / 2 / 6 / 5;
+  border-color: black;
+  border-width:3px;  
+  border-style: dotted;
+  border-radius: 10px;
+  text-align: center;
+  max-height: 33%;
+  width: 775px;
+  margin-left: 4%;
+  overflow-x: scroll;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: minmax(150px, 1fr);
+  background-color: rgb(120, 196, 44);
+  font-family: sans-serif;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  /* text-align: center;
+  border-color: black;
+  border-width:3px;  
+  border-style: dotted;
+  border-radius: 10px;
+  text-align: center;
+  max-height: 33%;
+  margin-left: 4%;
+  margin-right: 6%;
+  margin-top: 5%;
+  display: block; */
+  text-align: center;
+  font-size: 20px;
+  border: black solid 1px;
+  width: auto;
+  height: auto;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  background-color: rgb(255,255,255, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+  padding-bottom: 10px;
+  object-fit: contain;
+  background-color: rgb(161, 192, 21, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-side {
+  grid-area: 2 / 1 / 6 / 2;
+  border-color: black;
+  border-width:3px;  
+  border-style: dotted;
+  border-radius: 10px;
+  text-align: center;
+  max-height: 33%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 5%;
+  width: 220px;
+  background-color: rgb(120, 196, 44);
+  font-family: sans-serif;
+  font-size: 40px;
+ }
+
+.right-side {
+  grid-area: 2 / 5 / 6 / 6;
+  border-color: black;
+  border-width:3px;  
+  border-style: dotted;
+  border-radius: 10px;
+  text-align: center;
+  max-height: 33%;
+  margin-left: 17%;
+  margin-right: 4%;
+  background-color: rgb(120, 196, 44);
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+ul {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  display: inline;
+  vertical-align: middle;
+  font-weight: normal;
+  list-style-type: none;
 }
