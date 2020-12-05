@@ -7,25 +7,24 @@ class RightSide extends React.Component {
     }
 
     clickHandler = () => {
-        let balls = 4
-        let strikes = 3
+
         let pitch = (Math.floor(Math.random() * 70) + 1);
             if (parseInt(pitch) <= 10) {
-                this.setState({outcome: `Ball ${balls}`})
+                this.setState({outcome: walk})
             } else if ((parseInt(pitch)) > 11 && (parseInt(pitch)) < 25) {
-                this.setState({outcome: `Strike ${strikes}`})
+                this.setState({outcome: strikeout})
             } else if ((parseInt(pitch)) > 26 && (parseInt(pitch)) < 35) {
-                this.setState({outcome: "Single"})
+                this.setState({outcome: single})
             } else if ((parseInt(pitch)) > 36 && (parseInt(pitch)) < 42) {
-                this.setState({outcome: "Double"})
+                this.setState({outcome: double})
             } else if ((parseInt(pitch)) > 43 && (parseInt(pitch)) < 47) {
-                this.setState({outcome: "Triple"})
+                this.setState({outcome: triple})
             } else if ((parseInt(pitch)) > 48 && (parseInt(pitch)) < 59) {
-                this.setState({outcome: "Homerun"})
+                this.setState({outcome: homerun})
             } else if ((parseInt(pitch)) > 60 && (parseInt(pitch)) < 64) {
-                this.setState({outcome: "Hit By Pitch"})
+                this.setState({outcome: hitbypitch})
             } else {
-                this.setState({outcome: "Ground Out"})
+                this.setState({outcome: groundout})
             }
             console.log(this.state)
     } 
