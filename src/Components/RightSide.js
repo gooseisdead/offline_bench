@@ -34,7 +34,7 @@ class RightSide extends React.Component {
         let textArray = ["yes", "no", "maybe so"]
         let randomIndex = Math.floor(Math.random() * textArray.length); 
         let randomElement = textArray[randomIndex];
-        console.log(randomElement)
+        return <h2>`${randomElement}`</h2>
     }
 
     render = () => {
