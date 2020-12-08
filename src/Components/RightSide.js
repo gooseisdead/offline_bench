@@ -7,26 +7,26 @@ class RightSide extends React.Component {
     }
 
     clickHandler = () => {
-
+        
         let pitch = (Math.floor(Math.random() * 70) + 1);
+        console.log(pitch)
             if (parseInt(pitch) <= 10) {
-                this.setState({outcome: walk})
+                return <h2>Ball Four</h2>
             } else if ((parseInt(pitch)) > 11 && (parseInt(pitch)) < 25) {
-                this.setState({outcome: strikeout})
+                return <h2>Strike Three!</h2>
             } else if ((parseInt(pitch)) > 26 && (parseInt(pitch)) < 35) {
-                this.setState({outcome: single})
+                return <h2>Single</h2>
             } else if ((parseInt(pitch)) > 36 && (parseInt(pitch)) < 42) {
-                this.setState({outcome: double})
+                return <h2>Double</h2>
             } else if ((parseInt(pitch)) > 43 && (parseInt(pitch)) < 47) {
-                this.setState({outcome: triple})
+                return <h2>Triple</h2>
             } else if ((parseInt(pitch)) > 48 && (parseInt(pitch)) < 59) {
-                this.setState({outcome: homerun})
+                return <h2>Homerun</h2>
             } else if ((parseInt(pitch)) > 60 && (parseInt(pitch)) < 64) {
-                this.setState({outcome: hitbypitch})
+                return <h2>Hit By Pitch</h2>
             } else {
-                this.setState({outcome: groundout})
+                return <h2>Ground Out</h2>
             }
-            console.log(this.state)
     } 
 
     testHandler = () => {
